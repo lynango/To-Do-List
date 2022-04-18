@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 
 const Todo = (props) => {
-    const { list, setList } = props;
+    const {list, setList} = props;
     const [task, setTask] = useState("");
     
     const taskDuty = {
