@@ -1,18 +1,15 @@
-import './App.css';
-import Add from './components/Add';
-import Display from './components/Display';
 import React, { useState } from 'react';
+import './App.css';
+import Todo from './components/Todo';
 
 function App() {
-  const [ todoList, setList ] = useState([]);
+  const [list, setList] = useState([]);
 
   return (
     <div className="App">
-      <h1>To-Do List: </h1>
-      <Add todoList={ todoList } setList={ setList }/>
-      <Display todoList={ todoList } setList={ setList }/>
+      <Todo list = {list} setList = {setList} />
     </div>
   );
-}
+};
 
 export default App;
